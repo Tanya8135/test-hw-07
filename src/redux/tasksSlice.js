@@ -17,6 +17,7 @@ const tasksSlice = createSlice({
         isLoading: false,
         error: null,
     },
+    // Обробка зовнішніх екшенів (reducers - більше не потрібен)
     extraReducers: {
         [fetchTasks.pending]: handlePending,
         [fetchTasks.fulfilled](state, action) {
